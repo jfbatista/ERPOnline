@@ -1,0 +1,82 @@
+object PageLayout: TPageLayout
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object lytContainer: TLayout
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object recBackground: TRectangle
+      Align = Client
+      Fill.Color = xFFF4F3EF
+      Size.Width = 640.000000000000000000
+      Size.Height = 480.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+    end
+    object lytMain: TLayout
+      Align = Client
+      Margins.Left = 50.000000000000000000
+      Size.Width = 590.000000000000000000
+      Size.Height = 480.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object lytTop: TLayout
+        Align = Top
+        Size.Width = 590.000000000000000000
+        Size.Height = 60.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+      end
+      object lytBody: TLayout
+        Align = Client
+        Size.Width = 590.000000000000000000
+        Size.Height = 420.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+      end
+    end
+    object MultiView1: TMultiView
+      Size.Width = 250.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object lytMultiView: TLayout
+        Align = Client
+        Size.Width = 50.000000000000000000
+        Size.Height = 480.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Rectangle1: TRectangle
+          Align = Client
+          Fill.Kind = Gradient
+          Fill.Gradient.Points = <
+            item
+              Color = xFF1D1B1C
+              Offset = 0.009316770359873772
+            end
+            item
+              Color = xFFB5AEAE
+              Offset = 1.000000000000000000
+            end>
+          Fill.Gradient.StartPosition.X = 0.500000000000000000
+          Fill.Gradient.StartPosition.Y = 1.000000000000000000
+          Fill.Gradient.StopPosition.X = 0.499999970197677600
+          Fill.Gradient.StopPosition.Y = 0.000000000000000000
+          Size.Width = 50.000000000000000000
+          Size.Height = 480.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+        end
+      end
+    end
+  end
+end
